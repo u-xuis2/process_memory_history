@@ -1,0 +1,17 @@
+[program:process_memory_history]
+command=__PROJECT_PATH__/bin/start_by_supervisor.sh
+directory=__PROJECT_PATH__
+user=__USER__
+autostart=true
+autorestart=true
+redirect_stderr=true
+stdout_logfile=__PROJECT_PATH__/logs/process_memory_history.log
+stdout_logfile_maxbytes=10MB
+stdout_logfile_backups=30
+startretries=3
+startsecs=0
+stopsignal=TERM
+stopwaitsecs=30
+killasgroup=true
+stopasgroup=true
+environment=PATH="__PATH__"

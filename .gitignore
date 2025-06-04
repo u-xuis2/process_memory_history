@@ -192,3 +192,40 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# プロジェクト固有の除外ファイル
+.claude
+in/
+CLAUDE.md
+
+# 出力ファイル
+output/*.json
+logs/*.log
+logs/*.pid
+
+# 設定ファイル（テンプレートは除く）
+settings.json
+
+# supervisor設定ファイル（生成済み）
+supervisor/*.conf
+
+# テストファイル
+test_*.tsv
+test_output/
+
+# エディタ固有
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS固有
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+

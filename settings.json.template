@@ -1,0 +1,20 @@
+{
+  "collection": {
+    "interval_seconds": 60,
+    "top_count": 40,
+    "process_group_by": "command"
+  },
+  "output": {
+    "directory": "./output",
+    "file_retention_count": 1440,
+    "cleanup_interval_seconds": 3600
+  },
+  "security": {
+    "allowed_output_paths": ["./output", "/tmp/process_memory"],
+    "max_file_size_mb": 100
+  },
+  "logging": {
+    "level": "INFO",
+    "enable_debug": false
+  }
+}
